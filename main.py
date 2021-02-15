@@ -2,7 +2,7 @@
 import pandas as pd 
   
 # creating and initializing a nested list 
-nobab = [['Shuvo', 24, 'SanFrancisco', 'United States'], 
+nl = [['Shuvo', 24, 'SanFrancisco', 'United States'], 
             ['Sagor', 23, 'London', 'United Kingdom'], 
             ['Jamil', 22, 'Rome', 'Italy'], 
             ['Imtiaj', 21, 'New York', 'United States'], 
@@ -10,12 +10,12 @@ nobab = [['Shuvo', 24, 'SanFrancisco', 'United States'],
             ['Hasan', 19, 'Berlin', 'Germany']] 
   
 # Create a DataFrame object 
-df = pd.DataFrame(nobab, 
+df = pd.DataFrame(nl, 
                   columns=['Name', 'Age', 'City', 'Country'], 
                   ) 
   
 # Creating 2 lists 'marks' and 'gender' 
-marks = [69.5,98.9,97.2,96.2,95.5,94.5] 
+marks = [99.5,98.9,97.2,96.2,95.5,94.5] 
 gender = ['M','M','M','M','M','M'] 
   
 # adding lists as new column to dataframe df 
@@ -23,7 +23,7 @@ df['Marks'] = marks
 df['Gender'] = gender 
 
 # Creating 1 lists 'status'
-status=['Married','Married','Single','Divorce','Single','Pure Single']
+status=['Married','Married','Single','Singe','Single','Single']
 
 # adding lists as new column to dataframe df 
 df['Status'] = status
